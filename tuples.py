@@ -2,19 +2,19 @@
 # Не изменяемый тип
 # Занимает меньше памяти, чем список
 
-# a = (5,6,2,1)
-# a1 = ("a", "b", 1234)
-#
-# print(a)
-#
-# print("Второй элемент кортежа a1: ", a1[1])
+a = (5,6,2,1)
+a1 = ("a", "b", 1234)
+
+print(a)
+
+print("Второй элемент кортежа a1: ", a1[1])
 
 
-# student = ("Степан", 16, "88005553535")
+student = ("Степан", 16, "88005553535")
 
-# print("Имя ученика: ", student[0])
-# print("Возраст ученика: ", student[1])
-# print("Номер телефона ученика: ", student[2])
+print("Имя ученика: ", student[0])
+print("Возраст ученика: ", student[1])
+print("Номер телефона ученика: ", student[2])
 
 
 # Сделайте аналогичную программу с кортежем,
@@ -22,24 +22,24 @@
 # год производства, цвет
 # выведите данные о скорости и цвете автомобиля
 
-# automobile = ("Волга", 150, "1920", "Белый")
-# print("Максимальная скорость авто: ", automobile[1])
-# print("Цвет авто: ", automobile[3])
+automobile = ("Волга", 150, "1920", "Белый")
+print("Максимальная скорость авто: ", automobile[1])
+print("Цвет авто: ", automobile[3])
 
 
-# import turtle
-#
-# coordinates = (-100, 50)
-# pen_options = ("red", 5)
-#
-# turtle.penup()
-# turtle.goto(coordinates) #Перемещаемся на указанные координаты
-# turtle.color(pen_options[0]) #Меняем цвет кисти
-# turtle.pensize(pen_options[1]) #Меняем размер кисти
-#
-# turtle.pendown()
-# turtle.circle(50)
-# turtle.done()
+import turtle
+
+coordinates = (-100, 50)
+pen_options = ("red", 5)
+
+turtle.penup()
+turtle.goto(coordinates) #Перемещаемся на указанные координаты
+turtle.color(pen_options[0]) #Меняем цвет кисти
+turtle.pensize(pen_options[1]) #Меняем размер кисти
+
+turtle.pendown()
+turtle.circle(50)
+turtle.done()
 
 
 
@@ -53,13 +53,13 @@
 
 # заливка фигуры
 
-# import turtle
-#
-# turtle.begin_fill()
-# turtle.fillcolor("red")
-# turtle.circle(50)
-# turtle.end_fill()
-# turtle.done()
+import turtle
+
+turtle.begin_fill()
+turtle.fillcolor("red")
+turtle.circle(50)
+turtle.end_fill()
+turtle.done()
 
 
 
@@ -69,30 +69,30 @@
 # двоек, троек, четверок и пятерок.
 
 
-# marks = (2, 5, 5, 3, 4, 4, 2)
-# mark2 = mark3 = mark4 = mark5 = 0
-#
-# for mark in marks:
-#     if mark == 2:
-#         mark2 += 1
-#     if mark == 3:
-#         mark3 += 1
-#     if mark == 4:
-#         mark4 +=1
-#     if mark == 5:
-#         mark5 += 1
-#
-# print("Двоек: ", mark2)
-# print("Троек: ", mark3)
-# print("Четверок: ", mark4)
-# print("Пятерок: ", mark5)
+marks = (2, 5, 5, 3, 4, 4, 2)
+mark2 = mark3 = mark4 = mark5 = 0
+
+for mark in marks:
+    if mark == 2:
+        mark2 += 1
+    if mark == 3:
+        mark3 += 1
+    if mark == 4:
+        mark4 +=1
+    if mark == 5:
+        mark5 += 1
+
+print("Двоек: ", mark2)
+print("Троек: ", mark3)
+print("Четверок: ", mark4)
+print("Пятерок: ", mark5)
 
 
 # Разбить кортеж на отдельные переменные
 
-# name, email, number = ("Степан", "stepane@mail.ru", "888888888888")
-#
-# print("Номер телефона абонента", name, ":", number)
+name, email, number = ("Степан", "stepane@mail.ru", "888888888888")
+
+print("Номер телефона абонента", name, ":", number)
 
 
 
@@ -100,14 +100,14 @@
 # Есть ли элемент в кортеже?
 
 
-# students = ("Олег", "Ирина", "Виталий", "Зинаида")
-#
-# name = input("Введите имя искомого ученика: ")
-#
-# if name in students:
-#     print(f"Ученик с именем {name} найден")
-# else:
-#     print(f"Ученик с именем {name} не найден")
+students = ("Олег", "Ирина", "Виталий", "Зинаида")
+
+name = input("Введите имя искомого ученика: ")
+
+if name in students:
+    print(f"Ученик с именем {name} найден")
+else:
+    print(f"Ученик с именем {name} не найден")
 
 
 
@@ -121,12 +121,12 @@
 # 2. Перебирая элементы кортежа сделать проверку, каких элементов нет.
 # 3. Вывести эти элементы
 
-# products = ("картошка", "хлеб", "квас", "соль", "печеньки")
-# buying_prod = ("соль", "хлеб")
-#
-# for prod in products:
-#     if prod not in buying_prod:
-#         print("Ты забыл купить:", prod)
+products = ("картошка", "хлеб", "квас", "соль", "печеньки")
+buying_prod = ("соль", "хлеб")
+
+for prod in products:
+    if prod not in buying_prod:
+        print("Ты забыл купить:", prod)
 
 
 test_tuple = ([1,2,3], [4,5,6], [7,8,9])
