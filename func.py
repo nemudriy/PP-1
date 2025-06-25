@@ -1,4 +1,4 @@
-# print("Привет")
+print("Привет")
 
 # Определение
 # def имя_функции():
@@ -8,30 +8,30 @@
 # имя_функции()
 
 
-# def say_hello():
-#     print("Hello")
-#     print("World")
-# say_hello()
+def say_hello():
+    print("Hello")
+    print("World")
+say_hello()
 
 
 
-# def say_user_hello(name, second_name):
-#     print("Привет", name, second_name)
-#
-# say_user_hello("Степан", "Леонидович")
+def say_user_hello(name, second_name):
+    print("Привет", name, second_name)
+
+say_user_hello("Степан", "Леонидович")
 
 
 
 
 # Переделайте программу так, чтобы
 # пользователь сам вводил числа через int(input())
-# def sum(a,b):
-#     print(a+b)
-#
-# a = int(input("Первое число: "))
-# b = int(input("Второе число: "))
-#
-# sum(a,b)
+def sum(a,b):
+    print(a+b)
+
+a = int(input("Первое число: "))
+b = int(input("Второе число: "))
+
+sum(a,b)
 
 
 
@@ -42,24 +42,24 @@
 # где a,b,c - числа, которые вводит пользователь
 
 
-# def disk (a,b,c):
-#     print(b*b - 4*a*c)
-#
-# a = int(input())
-# b = int(input())
-# c = int(input())
-# disk(a,b,c)
+def disk (a,b,c):
+    print(b*b - 4*a*c)
 
-# name = "Вася"
-# age = 19
-#
-# def check_user(name, age):
-#     if name == "Вася" and age > 12:
-#         print("Добро пожаловать")
-#     else:
-#         print("Нельзя")
-#
-# check_user(name, age)
+a = int(input())
+b = int(input())
+c = int(input())
+disk(a,b,c)
+
+name = "Вася"
+age = 19
+
+def check_user(name, age):
+    if name == "Вася" and age > 12:
+        print("Добро пожаловать")
+    else:
+        print("Нельзя")
+
+check_user(name, age)
 
 
 
@@ -68,10 +68,10 @@
 # и выводит результат.
 # Пользователь сам вводит радиус (R)
 
-# def s_circle(R):
-#     print(3.14 * R * R)
-#
-# s_circle(15)
+def s_circle(R):
+    print(3.14 * R * R)
+
+s_circle(15)
 
 # Мы разрабатываем приложение для велотренажера.
 # Сделайте функцию, которая получает путь (S) и скорость (V), а находит время пути.
@@ -79,18 +79,18 @@
 
 
 
-# def bicycle_time(S,V):
-#     print("Время: ", S/V)
-# bicycle_time(100,15)
+def bicycle_time(S,V):
+    print("Время: ", S/V)
+bicycle_time(100,15)
 
 
 
 # Значения параметров по умолчанию
 
-# def my_func(name, age=10, height = 100):
-#     print("Имя:", name, "Возраст:", age, "Рост:", height)
-#
-# my_func("Степан")
+def my_func(name, age=10, height = 100):
+    print("Имя:", name, "Возраст:", age, "Рост:", height)
+
+my_func("Степан")
 
 # Пользователь хочет пообщаться в чате.
 # Для этого ему нужно указать свое имя и город.
@@ -101,17 +101,17 @@
 # "Привет, имя_пользователя из города N"
 
 
-# def chat (name, city = "Moskow"):
-#     print("Привет", name, "из города" , city)
-#
-# name = input("Как вас будут звать: ")
-# city = input("Введите ваш город: ")
-# # Если мы указали город:
-# if city != "":
-#     chat(name, city)
-# # Если мы НЕ указали город:
-# else:
-#     chat(name)
+def chat (name, city = "Moskow"):
+    print("Привет", name, "из города" , city)
+
+name = input("Как вас будут звать: ")
+city = input("Введите ваш город: ")
+# Если мы указали город:
+if city != "":
+    chat(name, city)
+# Если мы НЕ указали город:
+else:
+    chat(name)
 
 
 # return - вернуть результат
