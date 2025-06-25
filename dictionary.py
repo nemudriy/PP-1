@@ -1,39 +1,39 @@
-# dictionary = {"Hello": "Привет", "Bye":"Пока"}
+dictionary = {"Hello": "Привет", "Bye":"Пока"}
 
-#empty_dict = {} #Пустой словарь
+empty_dict = {} #Пустой словарь
 
 # Вывести значение:
-# print(dictionary["Hello"])
+print(dictionary["Hello"])
 
 #Добавить элемент/заменить элемент
 
-# dictionary['Bye'] = "Прощай"
-# dictionary["See"] = "Видеть"
-#
-# print(dictionary)
+dictionary['Bye'] = "Прощай"
+dictionary["See"] = "Видеть"
+
+print(dictionary)
 
 # Получить ключи:
 
-#my_keys = dictionary.keys()
-#word1 = list(my_keys)[0]
-#print(word1) #Выведет Hello
+my_keys = dictionary.keys()
+word1 = list(my_keys)[0]
+print(word1) #Выведет Hello
 
 #Получить значения:
 
-#my_values = dictionary.values()
-#value1 = list(my_values)[1]
-#print(value1) #Выведет Прощай
+my_values = dictionary.values()
+value1 = list(my_values)[1]
+print(value1) #Выведет Прощай
 
 # "Сложные/вложенные/что это такое?" словари
 
-#cars = {1:["Audi", "Седан", 200],
-#       2:["Niva", "Внедорожник", 150],
-#       3:["Ferrari", "Спорткар", 400]}
+cars = {1:["Audi", "Седан", 200],
+       2:["Niva", "Внедорожник", 150],
+       3:["Ferrari", "Спорткар", 400]}
 
 #Выведем данные о какой-нибудь машине
-#print("Название", cars[1][0])
-#print("Класс", cars[1][1])
-#print("Максимальная скорость", cars[1][2])
+print("Название", cars[1][0])
+print("Класс", cars[1][1])
+print("Максимальная скорость", cars[1][2])
 
 # Представьте, что вы создаете сайт и на вас легла
 # задача сделать базу данных пользователей в формате
@@ -47,23 +47,19 @@
 # пользователя с заполнением указанных данных *
 
 
-# import random
-#
-# users = {1000:["Вася", 17, "Russia", "Ru"],
-#          1300:["Петя", 20, "USA", "Ru"]}
-#
-#
-# print(f"Данные о пользователе: "
-#       f"Имя: {users[1000][0]}, Возраст: {users[1000][1]}, Страна проживания и язык: {users[1000][2]} и {users[1000][3]}")
-#
-#
-#
-# name = input("Введите имя: ")
-# age = int(input("Введите возраст: "))
-# country = input("Введите страну проживания: ")
-#
-# users[random.randint(1000, 9000)] = [name, age, country, "Ru"]
-# print(users)
+import random
+
+users = {1000:["Вася", 17, "Russia", "Ru"],
+         1300:["Петя", 20, "USA", "Ru"]}
+
+print(f"Данные о пользователе: "
+       f"Имя: {users[1000][0]}, Возраст: {users[1000][1]}, Страна проживания и язык: {users[1000][2]} и {users[1000][3]}")
+
+name = input("Введите имя: ")
+age = int(input("Введите возраст: "))
+country = input("Введите страну проживания: ")
+users[random.randint(1000, 9000)] = [name, age, country, "Ru"]
+print(users)
 
 
 
@@ -85,29 +81,27 @@
 # 3. Сравниваем
 
 
-# gameObjects = {"Книга зачарований": 3, "Стальной меч": 10, "Круг початого сыра": 5}
-# player = ["player140", 20, 10]
-#
-# maxW = (player[1]*player[2]) / 2
-# gameObjectsW = 0
-#
-# gameObjectsValues = gameObjects.values()
-#
-# for item in list(gameObjectsValues):
-#     gameObjectsW +=item
-#
-# if maxW>=gameObjectsW:
-#     print("Нет перевеса")
-# else:
-#     print("Есть перевес")
+gameObjects = {"Книга зачарований": 3, "Стальной меч": 10, "Круг початого сыра": 5}
+player = ["player140", 20, 10]
+maxW = (player[1]*player[2]) / 2
+gameObjectsW = 0
+
+gameObjectsValues = gameObjects.values()
+
+for item in list(gameObjectsValues):
+  gameObjectsW +=item
+
+if maxW>=gameObjectsW:
+  print("Нет перевеса")
+else:
+  print("Есть перевес")
 
 
-#
-# schoolGrades = {"Вася":4, "Петя":2, "Люба":3}
-#
-# for name, grade in schoolGrades.items():
-#     if grade == 2:
-#         print("Товарищ", name, "получил 2 за контрольную")
+schoolGrades = {"Вася":4, "Петя":2, "Люба":3}
+
+for name, grade in schoolGrades.items():
+  if grade == 2:
+    print("Товарищ", name, "получил 2 за контрольную")
 
 
 # Создайте словарь, хранящий информацию о программах :
@@ -118,14 +112,13 @@
 
 
 
-# users = {"ked15":"ked15@gmail.com", "lol9999":"lolololo@gmail.com"}
-#
-# if "ked15" in users.keys():
-#     print("Пользователь с ником ked15 найден!")
-#
-#
-# if "ked15@gmail.com" in users.values():
-#     print("Пользователь найден!")
+ users = {"ked15":"ked15@gmail.com", "lol9999":"lolololo@gmail.com"}
+
+if "ked15" in users.keys():
+  print("Пользователь с ником ked15 найден!")
+
+if "ked15@gmail.com" in users.values():
+    print("Пользователь найден!")
 
 
 
